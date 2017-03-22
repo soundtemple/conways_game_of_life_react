@@ -1,0 +1,80 @@
+#app {
+  width: 100%;
+  margin-left: auto;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Courier";
+  background-color: black;
+  color: white;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  width: 800px;
+  margin: auto;
+  min-width: 800px;
+  min-height: 200px;
+  background-color: grey;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 10px;
+}
+
+.cell,
+.cell-live,
+.cell-dead {
+  display: flex;
+  flex-flow: wrap;
+  width: 1.25%;
+  max-width: 1.25%;
+  height:10px;
+  max-height: 10px;
+  color: black;
+}
+
+.cell-live {
+  background-color: #4CAF50;
+}
+
+.cell-dead {
+  background-color: grey;
+}
+
+.logo,
+.game-controls {
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 15%;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+}
